@@ -1,0 +1,136 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <style>
+        body {
+          font-family: Verdana, sans-serif;
+        }
+        .topnav {
+            background-color: brown;
+            left: 0;
+            top: 0;
+            position: fixed;
+            width: 100%
+        }
+        .menuitem {
+            margin-top: 20;
+            display: flex;           
+            justify-content: center;
+        }
+        .grid {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+  
+        .grid-elem {
+            flex: 1;
+            max-width: 350px;
+        }
+
+        .description {
+            margin-top: 110;
+        }
+
+        .wrapper {
+            display: inline-grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        /* vertical menu styles */
+        @media screen and (max-width: 600px) {
+            .grid {
+            flex-direction: column;
+            }
+            .grid-elem {
+            flex: none;
+            width: 100%;
+            max-width: none;
+            }
+            .description {
+                margin-top: auto;
+            }
+        }
+        /* mobile desktop adjustments assisted by https://www.geeksforgeeks.org/pure-css-responsive-horizontal-to-vertical-menu-layout/# */
+    </style>
+    <body>
+        <div class="topnav" style="text-align: center; color: white">
+            <h1 style="align-content: center;">Menu</h1>
+        </div>
+        <div class="menuitem">
+            <ul class="grid">
+            <div class="grid-elem">
+            <h2 style="margin-top: 70; margin-bottom: -10; margin-left: 5;">Cocktail Name</h2>
+            <br>
+            <img src="https://absolutewellnesscenters.com/wp-content/uploads/2020/06/350px-X-350px-Placeholder-Image-.jpg" width="max-width" height="max-height" alt="A generic image placeholder commonly found in web design mockups.">
+            </div>
+            <div class="grid-elem">
+                <div class="description" style="margin-left: 5; width:350px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id nulla congue, viverra eros quis, posuere elit. Fusce non scelerisque mauris, in bibendum lorem.</div>
+                <br>
+                <h4 style="margin-top: -10; margin-left: 5;">BAC:</h4>
+                <br>
+                <div style="margin-top: -35; margin-left: 5;">
+                    Mocktail: 0%
+                </div>
+                <br>
+                <div style="margin-top: -15; margin-left: 5;">
+                    *Single: X%
+                </div>
+                <br>
+                <div style="margin-top: -15; margin-left: 5;">
+                    *Double: 2X%
+                </div>
+            </div>
+            <div class="grid-elem">
+                <div class="description" style="margin-left: 5; width:350px">
+                    <h3>Ingredients:</h3>
+                </div>
+                <br>
+                <h4 style="margin-top: -10; margin-left: 5;">Left:</h4>
+                <br>
+                <h4 style="margin-top: -10; margin-left: 5;">Middle:</h4>
+                <br>
+                <h4 style="margin-top: -10; margin-left: 5;">Right:</h4>
+            </div>
+            </ul>
+        </div>
+        <div class="menuitem">
+            <ul class="grid">
+            <div class="grid-elem">
+            <h2 style="margin-top: 70; margin-bottom: -10; margin-left: 5;">Cocktail Name</h2>
+            <br>
+            <img src="https://absolutewellnesscenters.com/wp-content/uploads/2020/06/350px-X-350px-Placeholder-Image-.jpg" width="max-width" height="max-height" alt="A generic image placeholder commonly found in web design mockups.">
+            </div>
+            <div class="grid-elem">
+                <div class="description" style="margin-left: 5; width:350px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id nulla congue, viverra eros quis, posuere elit. Fusce non scelerisque mauris, in bibendum lorem.</div>
+                <br>
+                <h4 style="margin-top: -10; margin-left: 5;">BAC:</h4>
+                <br>
+                <div style="margin-top: -35; margin-left: 5;">
+                    Mocktail: 0%
+                </div>
+                <br>
+                <div style="margin-top: -15; margin-left: 5;">
+                    *Single: X%
+                </div>
+                <br>
+                <div style="margin-top: -15; margin-left: 5;">
+                    *Double: 2X%
+                </div>
+            </div>
+            <div class="grid-elem">
+                <div class="description" style="margin-left: 5; width:350px">
+                    <h3>Ingredients:</h3>
+                </div>
+                <br>
+                <h4 style="margin-top: -10; margin-left: 5;">Left:</h4>
+                <br>
+                <h4 style="margin-top: -10; margin-left: 5;">Middle:</h4>
+                <br>
+                <h4 style="margin-top: -10; margin-left: 5;">Right:</h4>
+            </div>
+            </ul>
+        </div>
+    </body>
+</html>
